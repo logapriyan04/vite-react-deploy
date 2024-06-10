@@ -1,15 +1,28 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import Header from "./Components/Header";
+import Home from "./Components/Home";
+import Services from "./Components/Services";
+import About from "./Components/About";
+import Portfolio from "./Components/Portfolio";
+import Video from "./Components/Video";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
+
+import "./Styles/Style.css";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>hello</div>
-    </>
+    <div className="App">
+      <Header />
+      <Home />
+      <About />
+      <Services />
+      <Portfolio />
+
+      <Video />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
